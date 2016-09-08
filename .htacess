@@ -1,0 +1,4 @@
+RewiteEngine On
+ReeriteCond %{REQUEST_FILENAME} !-f
+ReeriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php/$1 [L]
